@@ -24,7 +24,7 @@ edit_page: false
 <hr>
 
 {% if paginator.next_page %}
-  <p><a href="{{ site.baseurl }}{{ paginator.next_page_path }}">Next page &raquo;</a></p>
+  <p><a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next page &raquo;</a></p>
 {% endif %}
 
 <p class="rss-subscribe">Subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
