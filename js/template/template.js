@@ -23,5 +23,5 @@ window.addEventListener('resize', function (event) {
 });
 
 // Attach FastClick to mobile menu buttons
-FastClick.attach(document.getElementById('site-menu-mobile-expand-btn'));
+FastClick.attach(document.getElementById('site-header'));
 FastClick.attach(document.getElementById('toc-mobile-expand'));
