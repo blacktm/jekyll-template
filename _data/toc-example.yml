@@ -1,0 +1,10 @@
+# Table of Contents
+
+- heading:
+    text: A Different TOC
+    link: /docs/
+  pages:
+  - text: The First Article
+    link: /docs/first.html
+  - text: A Second Article
+    link: /docs/second.html

@@ -1,0 +1,28 @@
+# Table of Contents
+
+- heading:
+    text: Home Section
+    link: /docs/
+  pages:
+  - text: The First Article
+    link: /docs/first.html
+  - text: A Second Article
+    link: /docs/second.html
+
+- heading:
+    text: Another Section
+    link: /docs/another/
+  pages:
+  - text: A Third Article
+    link: /docs/another/third.html
+  - text: A Fourth Article
+    link: /docs/another/fourth.html
+
+- heading:
+    text: Final Section
+    link: /docs/final/
+  pages:
+  - text: A Fifth Article
+    link: /docs/final/fifth.html
+  - text: A Sixth Article
+    link: /docs/final/sixth.html

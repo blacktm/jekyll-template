@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    <!-- Compiled CSS  -->
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    
+    <!-- Web Fonts -->
+    {% include fonts.html %}
+  </head>
+  
+  <body>
+    
+    {% include header.html %}
+    
+    <div class="main">
+      {{ content }}
+    </div>
+    
+    {% include footer.html %}
+    
+    <script src="{{ "/js/template/fastclick.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/template/template.js" | prepend: site.baseurl }}"></script>
+  </body>
+  
+</html>

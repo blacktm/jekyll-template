@@ -1,0 +1,15 @@
+---
+# Main CSS Styles: all styles are compiled to this file
+---
+
+@import "template";
+
+/* Custom Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
