@@ -2,4 +2,4 @@
 edit_page: false
 ---
 
-{% include sample-content.md %}
+{% include template/sample-content.md %}

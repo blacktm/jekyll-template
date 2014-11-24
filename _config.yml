@@ -30,10 +30,10 @@ edit_page:
 
 # Pagination
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "/blog/page:num"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: "/blog/:year/:month/:day/:title"
 
 # Defaults
@@ -41,4 +41,9 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: page
+      layout: template/page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: template/post

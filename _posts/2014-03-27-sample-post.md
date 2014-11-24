@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Sample Post
 date:   2014-03-27 17:35:14
 categories: update

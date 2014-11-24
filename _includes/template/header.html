@@ -1,10 +1,11 @@
-
 <header id="site-header" class="site-header">
   <div class="content">
     
     <nav>
       <a class="site-logo" href="{{ site.baseurl }}/">
-        <img class="site-logo-img" src="{{ site.baseurl }}/img/{{ site.header.logo_img }}" alt="logo">
+        {% if site.header.logo_img %}
+          <img class="site-logo-img" src="{{ site.baseurl }}/assets/img/{{ site.header.logo_img }}" alt="logo">
+        {% endif %}
         {{ site.header.logo_text }}
       </a>
       <ul class="site-menu">

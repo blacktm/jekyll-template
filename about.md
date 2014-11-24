@@ -3,4 +3,4 @@ title: About
 permalink: /about/
 ---
 
-{% include sample-content.md %}
+{% include template/sample-content.md %}

@@ -13,7 +13,7 @@ Some of the fancy, out-of-the-box features of this template:
 - Minimally responsive design
 - Easy to configure without too much layout hacking
 - Includes an "edit page" link to encourage OSS love
-- Table of contents for documentation-like content
+- Optional list of contents for pages
 - Lots Jekyll best practices on display
 - Easily customizable, whether style or structure
 - Uses [`normalize.css`](http://necolas.github.io/normalize.css/) for CSS resets
@@ -50,60 +50,40 @@ edit_page:
     branch: string
 ```
 
-### Page and Post Options:
+### Page Options:
 
 This goes in the YAML front matter:
 
 ```yaml
 ---
+title: string  # Title of the page
+subtitle: string  # Subtitle of the page
+
+breadcrumbs:
+  - text: string  # Text of the link
+    link: string  # Link href
+
+contents:
+  - text: string  # Text of the link
+    link: string  # Link href
+
 edit_page: boolean  # Show/hide the edit page link
                     # Overrides _config.yml
-
-toc: string  # Specify the table of contents to use
-             # This is the file name in the _data/ directory
 ---
 ```
 
-## Using the Table of Contents
-
-To use the built-in table of contents, set the layout to `toc` in the YAML front matter:
+### Post Options:
 
 ```yaml
 ---
-layout: toc
+edit_page: boolean  # Show/hide the edit page link
+                    # Overrides _config.yml
 ---
 ```
-
-Then add headings, pages, and links to `_data/toc.yml` or to a custom `.yml` file if using multiple TOCs. Use the format here:
-
-```yaml
-- heading:
-    text: string - heading text
-    link: string - heading link
-  pages:
-  - text: string - page text
-    link: string - page link
-```
-
-See [`toc.yml`](_data/toc.yml) for a detailed example.
 
 ## Editing the Template
 
-To help keep the template easy to upgrade and maintain, try to limit editing to these directories and files:
-
-```no-highlight
-_data/
-_includes/  -- only edit the two files below
-  _fonts.html
-  _footer.html
-_posts/
-_sass/  -- don't edit anything named "template"
-blog/
-css/    -- `main.scss` contains the final compiled styles
-docs/   -- just an example directory, can remove
-img/
-js/     -- don't edit the `template/` directory inside
-```
+To help keep the template easy to upgrade and maintain, don't edit any files or directories named `template`.
 
 ## Why Make a Template?
 
