@@ -2,8 +2,7 @@
 title:  Sample Post
 date:   2014-06-27 17:35:14
 categories: update release
-author: Nayan Jain
-github: supernayan
+author: supernayan
 ---
 
 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.

@@ -81,9 +81,9 @@ edit_page: boolean  # Show/hide the edit page link
 ---
 ```
 
-## Editing the Template
+## Maintaining the Template
 
-To help keep the template easy to upgrade and maintain, don't edit any files or directories named `template`.
+When using this template for your own site, try not to edit any files or directories named `template` for ease of updating and maintaining.
 
 ## Why Make a Template?
 
