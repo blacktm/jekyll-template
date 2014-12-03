@@ -4,20 +4,22 @@ This is  a standard template for [Jekyll](http://jekyllrb.com), everything you m
 
 [Check it out »](http://blacktm.github.io/standard-jekyll-template)
 
+Serve locally using `jekyll serve --watch --baseurl ""` or running `bash serve.sh`.
+
 Tweet feedback to [@blacktm](https://twitter.com/blacktm).
 
 ## Features
 
 Some of the fancy, out-of-the-box features of this template:
 
-- Minimally responsive design
-- Easy to configure without too much layout hacking
-- Includes an "edit page" link to encourage OSS love
-- Optional list of contents for pages
-- Lots Jekyll best practices on display
-- Easily customizable, whether style or structure
-- Uses [`normalize.css`](http://necolas.github.io/normalize.css/) for CSS resets
+- Basic responsive design, mobile menus
+- Easy to configure with YAML site config and front matter
+- An "edit page" link to GitHub to encourage OSS love
+- Optional contents list for navagating long pages
+- Gets out of the way to easily customize style and structure
+- Uses [Normalize.css](http://necolas.github.io/normalize.css/) for CSS resets
 - Uses [Colors](http://clrs.cc) for colors
+- Lots Jekyll best practices on display
 
 ## Configuration Options
 
@@ -80,6 +82,27 @@ edit_page: boolean  # Show/hide the edit page link
                     # Overrides _config.yml
 ---
 ```
+
+To change the posts path (e.g. "/blog" to "/news"), edit the following:
+
+1. In `_config.yml` where `<path>` is the desired URL path:
+    
+    ```yaml
+    # Posts
+    posts_path: /<path>
+    permalink: "/<path>/:year/:month/:day/:title"
+
+    # Pagination
+    paginate_path: "/<path>/page:num"
+    ```
+
+2. Rename `/blog` directory to `<path>`.
+
+3. Change permalink in `/<path>/categories.html`:
+    
+    ```yaml
+    permalink: /<path>/categories/
+    ```
 
 ## Maintaining the Template
 
