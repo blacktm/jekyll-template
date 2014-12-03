@@ -10,20 +10,6 @@ body {
   background: #DEE0E2;
 }
 
-a {
-  color: $blue;
-}
-
-hr {
-  height: 1px;
-  background: #BFBFBF;
-  border: none;
-}
-
-blockquote {
-  font-style: italic;
-}
-
 .content {
   margin: 0 auto;
   padding: 0 15px;
@@ -142,11 +128,35 @@ header.site-header {
 
 .main {
   padding: 15px 0;
+  min-height: 375px;
   background: #fff;
+  
+  h1, h2, h3, h4 {
+    margin-top: 1.25em;
+  }
+  
+  a {
+    color: $blue;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+  
+  hr {
+    height: 1px;
+    background: #BFBFBF;
+    border: none;
+  }
   
   img {
     margin: 15px 0;
     max-width: 100%;
+  }
+  
+  blockquote {
+    font-style: italic;
   }
 }
 
@@ -241,18 +251,10 @@ header.site-header {
 }
 
 .page-content {
-  margin-bottom: 40px;
-  
-  h1, h2, h3, h4 {
-    margin-top: 1.25em;
-  }
-  
+  margin-bottom: 30px;
+
   h1:first-of-type {
     margin-top: 0;
-  }
-  
-  p {
-    line-height: 1.5em;
   }
 }
 
@@ -264,11 +266,15 @@ header.site-header {
 /* Posts */
 /* ------------------------------------------------------ */
 
+.post {
+  margin-bottom: 40px;
+}
+
 article.post-excerpt {
   margin-bottom: 40px;
   
   h1 {
-    margin-top: 0;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -397,16 +403,22 @@ pre code::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 568px) {
-  h1 {
-    font-size: 28px;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  h3 {
-    font-size: 20px;
+  .main {
+    h1 {
+      font-size: 28px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    h3 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
   }
   
   header.site-header {
@@ -431,6 +443,23 @@ pre code::-webkit-scrollbar-thumb {
   .contents {
     margin: 0 0 30px 0;
     float: none;
+    width: 100%;
+    
+    h1 {
+      font-size: 18px;
+    }
+  }
+  
+  .page-header {
+    margin-bottom: 20px;
+    
+    h1 {
+      font-size: 32px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
   }
   
   .page-content.margin {
