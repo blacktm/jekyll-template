@@ -24,6 +24,19 @@
     
     <div class="main">
       {{ content }}
+
+      {% if page.edit_page != false %}
+        {% if site.edit_page.enabled != false or page.edit_page %}
+          <div class="edit-page">
+            <div class="content">
+              <hr>
+              <p>
+              <a href="https://github.com/{{ site.edit_page.github.author }}/{{ site.edit_page.github.repo }}/edit/{{ site.edit_page.github.branch }}/{{ page.path }}">{{ site.edit_page.text }}</a>
+              </p>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
     </div>
     
     <footer class="section">
