@@ -17,6 +17,8 @@ contents:
     link: /second
   - text: Third Topic
     link: /third
+
+permalink: /example-article/
 ---
 
 {% include template/sample-content.md %}
