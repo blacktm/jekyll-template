@@ -12,11 +12,11 @@ breadcrumbs:
 
 contents:
   - text: First Topic
-    link: /first
+    link: "#first"
   - text: Second Topic
-    link: /second
+    link: "#second"
   - text: Third Topic
-    link: /third
+    link: "#third"
 
 permalink: /example-article/
 ---

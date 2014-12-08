@@ -16,7 +16,7 @@ function toggleDisplay(id) {
 window.addEventListener('resize', function (event) {
   var el;
   el = document.getElementById('site-menu-mobile');
-  el.style.display = '';
+  if (el) { el.style.display = ''; }
   
   el = document.getElementById('toc');
   if (el) { el.style.display = ''; }

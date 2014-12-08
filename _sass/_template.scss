@@ -158,6 +158,32 @@ header.site-header {
   blockquote {
     font-style: italic;
   }
+  
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all
+    
+    th {
+      font-weight: bold
+    }
+    
+    th,  td {
+      padding: 6px 13px;
+      border: 1px solid #ddd
+    }
+    
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc
+    }
+    
+    tr:nth-child(2n) {
+      background-color: #f8f8f8
+    }
+  }
 }
 
 
@@ -229,7 +255,7 @@ header.site-header {
   width: 175px;
   
   h1 {
-    margin: 1em 0 .25em 0;
+    margin: 0 0 .25em 0;
     font-size: 18px;
   }
   
@@ -397,7 +423,7 @@ pre code::-webkit-scrollbar-thumb {
   }
   
   .page-content.margin {
-    margin-left: 225px;
+    margin-left: 250px;
   }
 }
 
