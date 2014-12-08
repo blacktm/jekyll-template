@@ -7,7 +7,7 @@
   
   <ul id="contents-list">
     {% for item in page.contents %}
-      <li><a href="{{ site.baseurl }}{{ item.link }}">{{ item.text }}</a></li>
+      <li><a href="{{ item.link }}">{{ item.text }}</a></li>
     {% endfor %}
   </ul>
   
