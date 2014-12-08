@@ -58,7 +58,7 @@ This goes in the YAML front matter:
 
 ```yaml
 ---
-title: string  # Title of the page
+title: string     # Title of the page
 subtitle: string  # Subtitle of the page
 
 breadcrumbs:
