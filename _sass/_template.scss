@@ -6,14 +6,31 @@
 /* Template Styles */
 /* ------------------------------------------------------ */
 
-body {
-  background: #DEE0E2;
+html, body {
+  height: 100%;
+}
+
+a {
+  color: $blue;
+}
+
+hr {
+  height: 1px;
+  background: #BFBFBF;
+  border: none;
 }
 
 .content {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 800px;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -150px 0;
 }
 
 .center {
@@ -128,26 +145,39 @@ header.site-header {
 
 .main {
   padding: 15px 0;
-  min-height: 375px;
-  background: #fff;
   
   h1, h2, h3, h4 {
     margin-top: 1.25em;
   }
   
-  a {
-    color: $blue;
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 26px;
+  }
+  
+  h3 {
+    font-size: 20px;
   }
   
   p {
-    font-size: 18px;
-    line-height: 1.5em;
+    font-size: 17px;
+    line-height: 1.7em;
   }
   
-  hr {
-    height: 1px;
-    background: #BFBFBF;
-    border: none;
+  li {
+    font-size: 17px;
+    margin-bottom: 8px;
+    
+    p {
+      line-height: 1em;
+    }
+  }
+  
+  pre {
+    font-size: 17px;
   }
   
   img {
@@ -238,7 +268,7 @@ header.site-header {
   
   h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 38px;
   }
   h2 {
     margin: 0;
@@ -299,13 +329,13 @@ article.post-excerpt {
   margin-bottom: 40px;
   
   h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
   }
 }
 
 .post-header {
   h1 {
-    margin-top: 0;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -333,8 +363,21 @@ article.post-excerpt {
 /* ------------------------------------------------------ */
 
 footer {
-  min-height: 100px;
-  border-top: 1px solid #A1ACB2;
+  .footer-content {
+    background: #DEE0E2;
+    border-top: 1px solid #A1ACB2;
+    height: 100%;
+    min-height: 100px;
+  }
+}
+
+footer, .push {
+  height: 150px;
+  overflow: hidden;
+}
+
+footer, .push {
+  clear: both;
 }
 
 
@@ -391,6 +434,8 @@ pre code::-webkit-scrollbar-thumb {
 /* ------------------------------------------------------ */
 
 .edit-page {
+  margin-bottom: 10px;
+  
   p {
     margin: 0;
   }
@@ -443,6 +488,15 @@ pre code::-webkit-scrollbar-thumb {
     
     p {
       font-size: 16px;
+      line-height: 1.5em;
+    }
+    
+    li {
+      font-size: 16px;
+    }
+    
+    pre {
+      font-size: 16px;
     }
   }
   
@@ -483,7 +537,7 @@ pre code::-webkit-scrollbar-thumb {
     }
     
     h2 {
-      font-size: 20px;
+      font-size: 22px;
     }
   }
   

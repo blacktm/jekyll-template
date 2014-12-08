@@ -20,14 +20,22 @@
   
   <body>
     
-    {% include template/header.html %}
+    <div class="wrapper">
+      
+      {% include template/header.html %}
+      
+      <div class="main">
+        {{ content }}
+      </div>
+      
+      <div class="push"></div>
+    </div>
     
-    <div class="main">
-      {{ content }}
-
+    <footer>
+      
       {% if page.edit_page != false %}
         {% if site.edit_page.enabled != false or page.edit_page %}
-          <div class="edit-page">
+          <div class="section edit-page">
             <div class="content">
               <hr>
               <p>
@@ -37,13 +45,11 @@
           </div>
         {% endif %}
       {% endif %}
-    </div>
-    
-    <footer class="section">
-      <div class="content">
-        
-        {% include footer.html %}
-        
+      
+      <div class="section footer-content">
+        <div class="content">
+          {% include footer.html %}
+        </div>
       </div>
     </footer>
     
