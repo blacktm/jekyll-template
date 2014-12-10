@@ -82,11 +82,10 @@ header.site-header {
           height: 64px;
         }
         
-        .icon.menu {
-          background-position: center;
-          background-size: 25px 20px;
-          background-image: url(../template/menu.svg);
-          background-repeat: no-repeat;
+        .icon.menu #mobile-menu-icon {
+          position: relative;
+          top: 22px;
+          left: 20px;
         }
       }
     }
@@ -137,6 +136,11 @@ header.site-header {
     color: #FFF;
     text-decoration: none;
   }
+}
+
+// Take out of `site-header` scope for overriding
+#mobile-menu-icon {
+  fill: #fff;
 }
 
 
