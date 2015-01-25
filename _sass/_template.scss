@@ -193,10 +193,10 @@ header.site-header {
     width: 100%;
     overflow: auto;
     word-break: normal;
-    word-break: keep-all
+    word-break: keep-all;
     
     th {
-      font-weight: bold
+      font-weight: bold;
     }
     
     th,  td {
@@ -306,10 +306,6 @@ header.site-header {
 
 .page-content {
   margin-bottom: 30px;
-
-  h1:first-of-type {
-    margin-top: 0;
-  }
   
   li {
     margin-bottom: .5em;
@@ -523,8 +519,6 @@ pre code::-webkit-scrollbar-thumb {
   }
   
   .page-header {
-    margin-bottom: 20px;
-    
     h1 {
       font-size: 32px;
     }
