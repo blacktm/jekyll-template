@@ -1,6 +1,4 @@
-@import "template/normalize",
-        "template/colors",
-        "template/syntax-highlighting";
+@import "template/normalize";
 
 /* ------------------------------------------------------ */
 /* Template Styles */
@@ -469,9 +467,9 @@ pre code {
 /* Media Queries */
 /* ------------------------------------------------------ */
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .content {
-    max-width: 960px;
+    max-width: 1170px;
   }
   
   .contents {
@@ -483,7 +481,21 @@ pre code {
   }
 }
 
-@media (max-width: 568px) {
+@media (min-width: 1000px) {
+  .content {
+    max-width: 970px;
+  }
+  
+  .contents {
+    width: 200px;
+  }
+  
+  .page-content.margin {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 640px) {
   .main {
     h1 {
       font-size: 28px;

@@ -58,21 +58,23 @@ This goes in the YAML front matter:
 
 ```yaml
 ---
-title: string     # Title of the page
-subtitle: string  # Subtitle of the page
+title: string       # Title of the page
+subtitle: string    # Subtitle of the page
 
 breadcrumbs:
-  - text: string  # Text of the link
-    link: string  # Link href
+  - text: string    # Text of the link
+    link: string    # Link href
 
 contents:
-  - text: string  # Text of the link
-    link: string  # Link href
+  - text: string    # Text of the link
+    link: string    # Link href
 
 edit_page: boolean  # Show/hide the edit page link
                     # Overrides _config.yml
 
-header: boolean  # Set to false to hide the header on the page
+header: boolean     # Set to false to hide the header on the page
+
+css: string         # Sets a CSS class for the current page
 ---
 ```
 
