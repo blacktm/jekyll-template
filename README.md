@@ -21,6 +21,12 @@ Some of the fancy, out-of-the-box features of this template:
 - Uses [Colors](http://clrs.cc) for colors
 - Lots Jekyll best practices on display
 
+## Sites Using this Template
+
+- [blacktm.com](http://www.blacktm.com)
+- [simple2d.com](http://www.simple2d.com)
+- [bluebuttonjs.com](http://www.bluebuttonjs.com)
+
 ## Configuration Options
 
 Options can either be set in [`_config.yml`](_config.yml) or in a page's YAML front matter. If options are shared between both, the front matter takes higher precedence. Below are the template-specific config options.
