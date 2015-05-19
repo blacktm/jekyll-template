@@ -22,24 +22,22 @@
         {% endfor %}
       </ul>
       
-      <ul class="site-nav-mobile">
-        <li>
-          <a href="javascript:toggleMobileMenu();">
-            
-            <svg id="site-mobile-menu-icon-open" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square">
-              <path d="M1,1 L24,1"></path>
-              <path d="M1,10 L24,10"></path>
-              <path d="M1,19 L24,19"></path>
-            </svg>
-            
-            <svg id="site-mobile-menu-icon-close" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square" style="display:none">
-              <path d="M4,2 L21,18"></path>
-              <path d="M4,18 L21,2"></path>
-            </svg>
-            
-          </a>
-        </li>
-      </ul>
+      <a href="javascript:toggleMobileMenu();">
+        <div class="site-nav-mobile">
+          
+          <svg id="site-mobile-menu-icon-open" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square">
+            <path d="M1,1 L24,1"></path>
+            <path d="M1,10 L24,10"></path>
+            <path d="M1,19 L24,19"></path>
+          </svg>
+          
+          <svg id="site-mobile-menu-icon-close" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square" style="display:none">
+            <path d="M4,2 L21,18"></path>
+            <path d="M4,18 L21,2"></path>
+          </svg>
+          
+        </div>
+      </a>
       
       {% endif %}
       
