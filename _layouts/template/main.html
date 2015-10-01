@@ -22,7 +22,9 @@
     
     <div class="wrapper">
       
-      {% include template/header.html %}
+      {% if page.header != false %}
+        {% include template/header.html %}
+      {% endif %}
       
       <div class="main">
         {{ content }}
@@ -31,6 +33,7 @@
       <div class="push"></div>
     </div>
     
+    {% if page.footer != false %}
     <footer>
       
       {% if page.edit_page != false %}
@@ -52,6 +55,7 @@
         </div>
       </div>
     </footer>
+    {% endif %}
     
     <script src="{{ "/assets/template/fastclick.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/assets/template/template.js" | prepend: site.baseurl }}"></script>
