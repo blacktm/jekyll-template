@@ -25,6 +25,16 @@ Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
 
 Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
+Table        | First Column | Second Column
+-------------|-------------|-------
+Aenean       | Etiam       | Venenatis
+Lacinia      | Ornare      | Porta
+Bibendum     | Magna       | Metus
+Consectetur  | Gravida     | Mollis
+Maecenas     | Venenatis   | Facilisis
+
+Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
 ### A Fourth Header
 
 Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
