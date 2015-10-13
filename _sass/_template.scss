@@ -262,6 +262,10 @@ header.site-header {
 .page-content {
   margin-bottom: 30px;
   
+  ul {
+    margin-top: .5em;
+  }
+  
   li {
     margin-bottom: .5em;
   }
@@ -269,6 +273,14 @@ header.site-header {
 
 .page-content.margin {
   margin-left: 200px;
+}
+
+.edit-page {
+  margin-bottom: 10px;
+  
+  p {
+    margin: 0;
+  }
 }
 
 
@@ -380,31 +392,6 @@ pre, code {
   background: #f2f2f2;
   border: 1px solid #dee0e2;
   border-radius: 3px;
-}
-
-
-/* Misc */
-/* ------------------------------------------------------ */
-
-.edit-page {
-  margin-bottom: 10px;
-  
-  p {
-    margin: 0;
-  }
-}
-
-.warning {
-  margin: 14px 0;
-  padding: 10px;
-  color: #bf9540;
-  background: #fef6e7;
-  border: 1px solid #f5daa3;
-  border-radius: 3px;
-  
-  a {
-    color: #bf9540;
-  }
 }
 
 
