@@ -24,7 +24,7 @@ Some of the fancy, out-of-the-box features of this template:
 ## Sites Using this Template
 
 - [blacktm.com](http://www.blacktm.com)
-- [simple2d.com](http://www.simple2d.com)
+- [ruby2d.com](http://www.ruby2d.com)
 - [bluebuttonjs.com](http://www.bluebuttonjs.com)
 
 ## Configuration Options
