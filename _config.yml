@@ -41,6 +41,9 @@ markdown: redcarpet
 redcarpet:
   extensions: [hard_wrap, tables]
 
+# Plugins
+gems: [jekyll-paginate]
+
 # Defaults
 defaults:
   - scope:
