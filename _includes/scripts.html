@@ -1,0 +1,9 @@
+<!-- Add anchors to headers -->
+{% if page.url contains '/blog/' %}
+{% else %}
+  {% if site.anchors %}
+    <script>
+      anchors.add('.page-content h1, .page-content h2, .page-content h3');  
+    </script>
+  {% endif %}
+{% endif %}

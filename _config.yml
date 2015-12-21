@@ -19,6 +19,9 @@ header:
     - text: Blog
       link: /blog
 
+# Pages
+anchors: true
+
 # Edit pages
 edit_page:
   # enabled: true  # Enabled by default for pages and posts

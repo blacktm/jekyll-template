@@ -48,6 +48,9 @@ header:
     - text:  string  # Text of the link
       link:  string  # Path of the link
 
+# Pages
+anchors: boolean  # Add paragraph headers anchors to pages
+
 # Edit Page
 edit_page:
   # enabled: boolean  # True by default for pages and posts
