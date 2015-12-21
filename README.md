@@ -15,7 +15,7 @@ Some of the fancy, out-of-the-box features of this template:
 - Basic responsive design, mobile menus
 - Easy to configure with YAML site config and front matter
 - An "edit page" link to GitHub to encourage OSS love
-- Optional contents list for navagating long pages
+- Optional contents list for navigating long pages
 - Gets out of the way to easily customize style and structure
 - Uses [Normalize.css](http://necolas.github.io/normalize.css/) for CSS resets
 - Uses [Colors](http://clrs.cc) for colors
@@ -34,13 +34,13 @@ Options can either be set in [`_config.yml`](_config.yml) or in a page's YAML fr
 ### `_config.yml` Options:
 
 ```yaml
-# Site config - required by template
+# Site - required by template
 title:       string  # The site's title
 description: string  # The site's description
 baseurl:     string  # Serve the site from the given URL
 url:         string  # The site's URL
 
-# Header config
+# Header
 header:
   logo_text: string  # Text to the right of the logo
   logo_img:  string  # Path of the logo image
@@ -48,10 +48,10 @@ header:
     - text:  string  # Text of the link
       link:  string  # Path of the link
 
-# Edit Page config
+# Edit Page
 edit_page:
-  # enabled: true   # Enabled by default for pages and posts
-  text:     string  # The text to display for the edit page link
+  # enabled: boolean  # True by default for pages and posts
+  text:     string    # The text to display for the edit page link
   github:   # Object containing the pertinent GitHub info to construct the link
     author: string
     repo:   string
