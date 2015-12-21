@@ -58,8 +58,19 @@
     {% endif %}
     
     <script src="{{ "/assets/template/fastclick.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/template/anchor.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/template/template.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/template/anchor.js"    | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/template/template.js"  | prepend: site.baseurl }}"></script>
+    
+    <!-- Add anchors to headers -->
+    {% if page.url contains '/blog/' %}
+    {% else %}
+      {% if site.anchors %}
+        <script>
+          anchors.add('.page-content h1, .page-content h2, .page-content h3');  
+        </script>
+      {% endif %}
+    {% endif %}
+    
     {% include scripts.html %}
   </body>
   
