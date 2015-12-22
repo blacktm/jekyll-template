@@ -14,23 +14,23 @@ function toggleDisplay(id) {
 
 
 function toggleMobileMenu() {
-  toggleDisplay('site-mobile-menu-icon-open');
-  toggleDisplay('site-mobile-menu-icon-close');
-  toggleDisplay('site-mobile-menu');
+  toggleDisplay('site-nav-menu-mobile-btn-icon-open');
+  toggleDisplay('site-nav-menu-mobile-btn-icon-close');
+  toggleDisplay('site-nav-menu-mobile');
 }
 
 
 window.addEventListener('resize', function (event) {
-  var el = document.getElementById('site-mobile-menu');
+  var el = document.getElementById('site-nav-menu-mobile');
   el.style.display = 'none';
   
-  el = document.getElementById('site-mobile-menu-icon-open');
+  el = document.getElementById('site-nav-menu-mobile-btn-icon-open');
   el.style.display = '';
   
-  el = document.getElementById('site-mobile-menu-icon-close');
+  el = document.getElementById('site-nav-menu-mobile-btn-icon-close');
   el.style.display = 'none';
 });
 
 
 // Attach FastClick to mobile menu buttons
-FastClick.attach(document.getElementById('site-nav-mobile'));
+FastClick.attach(document.getElementById('site-nav-menu-mobile-btn'));

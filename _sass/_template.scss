@@ -86,11 +86,13 @@ header.site-header {
       }
     }
     
-    .site-nav-mobile {
+    .site-nav-menu-mobile-btn {
       display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
+      margin: 0;
+    }
+    
+    .site-nav-menu-mobile-btn-container {
+      margin: -20px -15px 0 0;
       width: 64px;
       height: 64px;
       text-align: center;
@@ -99,7 +101,7 @@ header.site-header {
         border: none;
       }
       
-      .site-mobile-menu-icon {
+      .site-nav-menu-mobile-btn-icon {
         position: relative;
         top: 22px;
         stroke: #fff;
@@ -107,7 +109,7 @@ header.site-header {
     }
   }
   
-  .site-mobile-menu {
+  .site-nav-menu-mobile {
     margin: 20px -15px 0px -15px;
     text-align: right;
     
@@ -459,11 +461,11 @@ pre, code {
     }
     
     nav {
-      ul.site-nav {
+      .site-nav-menu {
         display: none;
       }
       
-      .site-nav-mobile {
+      .site-nav-menu-mobile-btn {
         display: block;
       }
     }

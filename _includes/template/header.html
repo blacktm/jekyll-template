@@ -18,32 +18,33 @@
       
       <ul class="site-nav">
         {% for item in site.header.nav %}
-          <li><a href="{{ site.baseurl }}{{ item.link }}">{{ item.text }}</a></li>
+          <li class="site-nav-menu"><a href="{{ site.baseurl }}{{ item.link }}">{{ item.text }}</a></li>
         {% endfor %}
+        
+        <li class="site-nav-menu-mobile-btn">
+          <a href="javascript:toggleMobileMenu();">
+            <div class="site-nav-menu-mobile-btn-container">
+              <svg id="site-nav-menu-mobile-btn-icon-open" class="site-nav-menu-mobile-btn-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square">
+                <path d="M1,1 L24,1"></path>
+                <path d="M1,10 L24,10"></path>
+                <path d="M1,19 L24,19"></path>
+              </svg>
+              
+              <svg id="site-nav-menu-mobile-btn-icon-close" class="site-nav-menu-mobile-btn-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square" style="display:none">
+                <path d="M4,2 L21,18"></path>
+                <path d="M4,18 L21,2"></path>
+              </svg>
+            </div>
+          </a>
+        </li>
+        
       </ul>
-      
-      <a href="javascript:toggleMobileMenu();">
-        <div id="site-nav-mobile" class="site-nav-mobile">
-          
-          <svg id="site-mobile-menu-icon-open" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square">
-            <path d="M1,1 L24,1"></path>
-            <path d="M1,10 L24,10"></path>
-            <path d="M1,19 L24,19"></path>
-          </svg>
-          
-          <svg id="site-mobile-menu-icon-close" class="site-mobile-menu-icon" width="25px" height="20px" viewBox="0 0 25 20" stroke-width="2" stroke-linecap="square" style="display:none">
-            <path d="M4,2 L21,18"></path>
-            <path d="M4,18 L21,2"></path>
-          </svg>
-          
-        </div>
-      </a>
       
       {% endif %}
       
     </nav>
     
-    <div id="site-mobile-menu" class="site-mobile-menu" style="display:none">
+    <div id="site-nav-menu-mobile" class="site-nav-menu-mobile" style="display:none">
       <ul>
         {% for item in site.header.nav %}
           <a href="{{ site.baseurl }}{{ item.link }}"><li>{{ item.text }}</li></a>
