@@ -64,9 +64,8 @@
     <script src="{{ "/assets/template/template.js"  | prepend: site.baseurl }}"></script>
     
     <!-- Add anchors to headers -->
-    {% if page.url contains '/blog/' %}
-    {% else %}
-      {% if site.anchors %}
+    {% if page.anchors != false %}
+      {% if site.anchors != false or page.anchors %}
         <script>
           anchors.add('.page-content h1, .page-content h2, .page-content h3');  
         </script>

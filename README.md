@@ -83,6 +83,9 @@ edit_page: boolean  # Show/hide the edit page link, overrides _config.yml
 header: boolean     # Set to false to hide the header on the page
 footer: boolean     # Set to false to hide the footer on the page
 
+# Pages
+anchors: boolean    # Add paragraph headers anchors to pages, overrides _config.yml
+
 css: string         # Sets a CSS class for the current page
 ---
 ```
