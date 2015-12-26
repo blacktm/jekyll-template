@@ -78,8 +78,7 @@ contents:
   - text: string    # Text of the link
     link: string    # Link href
 
-edit_page: boolean  # Show/hide the edit page link
-                    # Overrides _config.yml
+edit_page: boolean  # Show/hide the edit page link, overrides _config.yml
 
 header: boolean     # Set to false to hide the header on the page
 footer: boolean     # Set to false to hide the footer on the page
