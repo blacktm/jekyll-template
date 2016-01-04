@@ -31,6 +31,12 @@ edit_page:
     repo:   standard-jekyll-template
     branch: gh-pages
 
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 # Posts
 posts_path: /blog
 permalink: "/blog/:year/:month/:day/:title"
