@@ -28,7 +28,7 @@ edit_page:
   text: "Edit this page »"
   github:
     author: blacktm
-    repo:   standard-jekyll-template
+    repo:   jekyll-template
     branch: gh-pages
 
 # Pages
