@@ -1,1 +1,1 @@
-jekyll serve --watch --baseurl "" --drafts
+jekyll serve --baseurl "" --drafts

@@ -1,10 +1,10 @@
-# A Standard Jekyll Template
+# A Jekyll Template
 
-This is  a standard template for [Jekyll](http://jekyllrb.com), everything you might expect from a starter site.
+This is a template for [Jekyll](http://jekyllrb.com), everything you might expect from a starter site.
 
 [Check it out »](http://blacktm.github.io/standard-jekyll-template)
 
-Serve locally using `jekyll serve --watch --baseurl ""` or running `bash serve.sh`.
+Serve locally using `jekyll serve --baseurl ""` or running `bash serve.sh`.
 
 Tweet feedback to [@blacktm](https://twitter.com/blacktm).
 
@@ -20,12 +20,6 @@ Some of the fancy, out-of-the-box features of this template:
 - Uses [Normalize.css](http://necolas.github.io/normalize.css/) for CSS resets
 - Uses [Colors](http://clrs.cc) for colors
 - Lots Jekyll best practices on display
-
-## Sites Using this Template
-
-- [blacktm.com](http://www.blacktm.com)
-- [ruby2d.com](http://www.ruby2d.com)
-- [bluebuttonjs.com](http://www.bluebuttonjs.com)
 
 ## Configuration Options
 
@@ -126,4 +120,4 @@ When using this template for your own site, try not to edit any files or directo
 
 ## Why Make a Template?
 
-I use Jekyll and GitHub pages for everything, [and I mean everything](https://github.com/department-of-veterans-affairs/gi-bill-comparison-tool). For new projects, I wanted the ability to spin up a site quickly, where minimal layout hacking was required and all the content placeholders were there. It needed to be comprehensive enough to meet the expectations of a mobile-first, responsive site yet simple to configure, customize, and extend. It also had to be easy to keep up to date, since I often have to maintain a bunch of OSS sites and such. If anything, it's a great template to learn from, given all the incredible features, power, and extensibility of Jekyll. :heart:
+I use Jekyll and GitHub pages for everything. For new projects, I wanted the ability to spin up a site quickly, where minimal layout hacking was required and all the content placeholders were there. It needed to be comprehensive enough to meet the expectations of a mobile-first, responsive site yet simple to configure, customize, and extend. It also had to be easy to keep up to date, since I often have to maintain a bunch of OSS sites and such. If anything, it's a great template to learn from, given all the incredible features, power, and extensibility of Jekyll. :heart:
